@@ -3,10 +3,19 @@
 <head>
     <title>Stranger Things Fan Page</title>
     <style>
-        body {background-image: url('https://images.unsplash.com/photo-1605806616949-1e87b487bc2a?q=80&w=1920&auto=format&fit=crop');
-background-size: cover;  /* 让图片铺满整个屏幕，不要重复 */
-            
-        }
+       body {
+        /* 这里是重点：线性渐变 */
+        background: linear-gradient(to bottom, #000000, #660000);
+        
+        /* 这一行是确保渐变铺满整个屏幕的高度 */
+        min-height: 100vh;
+        
+        color: #ff0000;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 0; /* 去掉默认边距 */
+        padding-top: 50px;
+    }
         h1 {
             font-size: 60px;
             letter-spacing: 5px;       /* 标题字母拉开距离 */
