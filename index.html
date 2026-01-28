@@ -22,6 +22,11 @@
             border-radius: 10px;       /* 圆角 */
             box-shadow: 0 0 20px red;  /* 给图片加个红色的发光效果！ */
         }
+        img:hover {
+    transform: scale(1.1);       /* 鼠标放上去，图片放大 1.1 倍 */
+    transition: 0.5s;            /* 过程要花 0.5 秒，慢慢变大，不突兀 */
+    cursor: pointer;             /* 鼠标变手型 */
+}
         p {
             font-size: 18px;
             opacity: 0.8;              /* 让正文稍微透明一点点，更有氛围 */
@@ -35,7 +40,6 @@
     <p>Welcome to Lingkai's World.</p>
     <p>Coding is like magic.</p>
     
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Stranger_Things_logo.png">
-
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/640px-Stranger_Things_logo.png" width="400">
 </body>
 </html>
