@@ -23,10 +23,31 @@
             box-shadow: 0 0 20px red;  /* 给图片加个红色的发光效果！ */
         }
         img:hover {
-    transform: scale(1.1);       /* 鼠标放上去，图片放大 1.1 倍 */
+
+  
+   transform: scale(1.1);       /* 鼠标放上去，图片放大 1.1 倍 */
     transition: 0.5s;            /* 过程要花 0.5 秒，慢慢变大，不突兀 */
     cursor: pointer;             /* 鼠标变手型 */
-}
+}/* 这是按钮的样式 */
+    .btn {
+        background-color: transparent; /* 背景透明 */
+        color: red;                    /* 红色文字 */
+        border: 2px solid red;         /* 红色边框 */
+        padding: 10px 20px;            /* 内边距：把字撑开一点，别挤 */
+        text-decoration: none;         /* 去掉下划线 */
+        font-size: 20px;               /* 字大一点 */
+        font-family: 'Courier New', monospace;
+        margin-top: 20px;              /* 离上面的图片远一点 */
+        display: inline-block;         /* 让它像积木一样块状显示 */
+        transition: 0.3s;              /* 变化要有动画 */
+    }
+    
+    /* 鼠标放上去变色 */
+    .btn:hover {
+        background-color: red;         /* 背景变红 */
+        color: black;                  /* 字变黑 */
+        box-shadow: 0 0 15px red;      /* 发红光 */
+    }
         p {
             font-size: 18px;
             opacity: 0.8;              /* 让正文稍微透明一点点，更有氛围 */
@@ -41,5 +62,6 @@
     <p>Coding is like magic.</p>
     
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/640px-Stranger_Things_logo.png" width="400">
+    <br><br> <a href="https://www.bilibili.com/video/BV11W411f7h2/" class="btn" target="_blank">WATCH TRAILER</a>
 </body>
 </html>
